@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
+
   plugins: [vue(), WindiCSS({
     scan: {
       dirs: ['.'], // all files in the cwd
@@ -12,7 +13,7 @@ export default defineConfig({
     },
   }),
   AutoImport({
-    imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/head', '@vueuse/core'],
+    imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/core'],
     dts: 'src/auto-imports.d.ts',
   }),
   Components({
