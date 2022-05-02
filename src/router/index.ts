@@ -1,15 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import generatedRoutes from '~pages'
 const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    {
-      path: '/',
-      name: 'Index',
-
-      component: () => import('../pages/index.vue')
-    },
-  ]
+  routes: generatedRoutes
 })
 
 
