@@ -4,6 +4,7 @@ import WindiCSS from 'vite-plugin-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts';
 
 export default defineConfig({
 
@@ -18,6 +19,7 @@ export default defineConfig({
     Pages({
       extensions: ['vue'],
     }),
+    Layouts({ layoutsDirs: 'src/layouts', defaultLayout: 'default' }),
     AutoImport({
       imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',

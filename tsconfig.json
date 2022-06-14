@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "types": [
-      "vite-plugin-pages/client"
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
     ],
     "target": "esnext",
     "useDefineForClassFields": true,
